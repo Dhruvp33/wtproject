@@ -6,11 +6,44 @@
 </head>
 <body>
     <h1>Normal weight</h1>
+    <p id="normalbmi"></p>
     <p>You have a normal weight. Here are some tips to maintain it:</p>
     <ul>
         <li>Eat a balanced diet</li>
         <li>Exercise regularly</li>
         <li>Get enough sleep</li>
     </ul>
+    <h2>Energy Balance and Weight Management</h2>
+
+
+
+<ul>
+    <li>The same amount of energy IN and energy OUT over time = weight stays the same (energy balance)</li>
+    <li>More energy IN than OUT over time = weight gain</li>
+    <li>More energy OUT than IN over time = weight loss</li>
+</ul>
+
+
+
+<h3>Tips for Reaching and Maintaining a Healthy Weight:</h3>
+
+<ul>
+    <li>Follow a healthy diet, and if you are overweight or obese, reduce your daily intake by 500 calories for weight loss</li>
+    <li>Are physically active</li>
+    <li>Limit the time you spend being physically inactive</li>
+</ul>
+<a href="https://www.pnbmetlife.com/articles/health/healthy-bmi-for-women-importance-tips-and-guidelines.html" target="_blank">click here to know more</a>
+    <div class="normal">
+        <img src="normal.jpeg" alt="Underweight Image" class="normal-image">
+    </div>
+    <div class="bottom-image-container">
+        <img src="table.png" alt="Bottom Image">
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+    const bmi = urlParams.get('bmi');
+    
+    document.getElementById("normalbmi").innerHTML = `Your BMI is ${bmi}`;
+    </script>
 </body>
 </html>

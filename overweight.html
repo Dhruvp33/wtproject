@@ -6,11 +6,37 @@
 </head>
 <body>
     <h1>Overweight</h1>
+    <p id="over"></p>
     <p>You are overweight. Here are some tips to reduce weight:</p>
     <ul>
         <li>Eat a healthy diet</li>
         <li>Exercise regularly</li>
         <li>Reduce your sugar intake</li>
     </ul>
+    <h2>Quick Tips for Reducing Weight</h2>
+
+<ul>
+    <li>Eat smaller portions and control calorie intake.</li>
+    <li>Choose whole foods like fruits, vegetables, and lean proteins.</li>
+    <li>Drink plenty of water and stay hydrated.</li>
+    <li>Limit sugary drinks and high-calorie snacks.</li>
+    <li>Exercise regularly, focusing on cardio and strength training.</li>
+    <li>Get enough sleep to support metabolism and recovery.</li>
+    <li>Avoid late-night eating or snacking.</li>
+    <li>Be consistent and patient with your routine.</li>
+</ul>
+<a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/index.htm" target="_blank">click here to know more</a>
+    <div class="over">
+        <img src="over.jpg" alt="Underweight Image" class="over-image">
+    </div>
+    <div class="bottom-image-container">
+        <img src="table.png" alt="Bottom Image">
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+    const bmi = urlParams.get('bmi');
+    
+    document.getElementById("over").innerHTML = `Your BMI is ${bmi}`;
+    </script>
 </body>
 </html>

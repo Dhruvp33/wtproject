@@ -15,17 +15,15 @@ function calculateBMI() {
     let category;
     if (bmi < 18.5) {
         category = "Underweight";
-        window.location.href = "underweight.html";
+        window.location.href = `underweight.html?bmi=${bmi.toFixed(2)}`;
     } else if (bmi < 25) {
         category = "Normal weight";
-        window.location.href = "normal.html";
+        window.location.href = `normal.html?bmi=${bmi.toFixed(2)}`;
     } else if (bmi < 30) {
         category = "Overweight";
-        window.location.href = "overweight.html";
+        window.location.href = `overweight.html?bmi=${bmi.toFixed(2)}`;
     } else {
         category = "Obese";
-        window.location.href = "obese.html";
+        window.location.href = `obese.html?bmi=${bmi.toFixed(2)}`;
     }
-
-    document.getElementById("result").innerHTML = `Your BMI is ${bmi.toFixed(2)} (${category})`;
 }

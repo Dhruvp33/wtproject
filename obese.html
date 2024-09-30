@@ -6,11 +6,38 @@
 </head>
 <body>
     <h1>Obese</h1>
+    <p id="obese"></p>
     <p>You are obese. Here are some tips to reduce weight:</p>
     <ul>
         <li>Consult a doctor or a dietician</li>
         <li>Eat a healthy diet</li>
         <li>Exercise regularly</li>
     </ul>
+    <h2>Tips for Obese Individuals Aiming to Reduce Weight</h2>
+
+<ul>
+    <li>Consult a healthcare professional to create a personalized plan.</li>
+    <li>Start with small, realistic goals to avoid overwhelming changes.</li>
+    <li>Focus on balanced meals, rich in fiber, lean proteins, and healthy fats.</li>
+    <li>Avoid processed foods and sugary snacks.</li>
+    <li>Incorporate low-impact exercises like walking, swimming, or cycling.</li>
+    <li>Increase daily physical activity gradually, aiming for consistency.</li>
+    <li>Track your food intake to understand calorie consumption.</li>
+    <li>Prioritize mental health, manage stress, and get quality sleep.</li>
+    <li>Consider professional support such as dieticians or fitness coaches.</li>
+</ul>
+<a href="https://www.mayoclinic.org/diseases-conditions/obesity/diagnosis-treatment/drc-20375749" target="_blank">click here to know more</a>
+    <div class="obese">
+        <img src="obese.jpg" alt="Underweight Image" class="under-image">
+    </div>
+    <div class="bottom-image-container">
+        <img src="table.png" alt="Bottom Image">
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+    const bmi = urlParams.get('bmi');
+    
+    document.getElementById("obese").innerHTML = `Your BMI is ${bmi}`;
+    </script>
 </body>
 </html>

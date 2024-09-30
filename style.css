@@ -108,6 +108,7 @@ body {
  
   .meter {
     position: absolute;
+    top: 20px;
     bottom: 50px;
     left: 620px;
     width: 150px; 
